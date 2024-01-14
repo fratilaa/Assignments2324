@@ -2,8 +2,7 @@ html{
     height: 100%;
 }
 *{
-    font-family: 'Merriweather', serif;
-    text-align: justify;
+    font-family: 'Merriweather','Times New Roman', serif;
 }
 body{
     width: 960px;
@@ -44,14 +43,12 @@ aside {
     color: white;
 }
 nav ul li {
-    /*border: 10px solid red;*/
     background-color: rgba(128, 128, 128, 0.742);
     padding: 25px;
     list-style: none;
     margin: 0px; 
     height: auto;  
 }
-
 nav ul {
     padding: 0px
 } 
@@ -72,9 +69,8 @@ nav ul li a{
 main{
     width: 600px;
     float: right;
+    text-align: justify;
     border: 1px solid black;
-    /* border-right: 1px solid black; */
-    /* border-bottom: 1px solid black; */
     margin-bottom: 8px;
     box-sizing: border-box;
     padding-left: 15px;
@@ -87,17 +83,26 @@ main{
     font-weight: bold;
 }
 #fig1 {
-    float: left;
+    float: right;
+}
+#fig2 {   
+    width: 100%; 
+}
+#fig3 {
+    text-align: center;
+}
+#fig3 figcaption {
+    text-align: center;
 }
 /* Footer */
 footer{
     position: relative;
     background-color: rgba(128, 128, 128, 0.74);
-    font-size: 20px;
+    font-size: 15px;
     border: 1px solid black;
     padding: 0px 8px 0px 0px;
-    clear: both
-
+    clear: both;
+    color: white;
 }
 /* Go to top button */
 #button{
@@ -115,18 +120,21 @@ footer{
     background-color: rgba(255, 255, 255, 0.5);
     font-weight: bold;
     color: rgb(118, 0, 0);
-
 }
 /* Table */
 #table1{
+    display: table;
     border: 1px solid black;
+    width: 100%;
+    margin: 0 auto;
 }
 #table1 th {
-    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.362);
+    border-collapse: collapse;
     padding: 5px;
 }
 #table1 td {
-    border: 1px solid black;
+    border: 1px solid rgba(255, 255, 255, 0.74);;
     padding: 5px;
 }
 tr:nth-child(2n){
