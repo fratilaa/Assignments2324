@@ -8,9 +8,10 @@ body{
     width: 960px;
     margin: 20px auto;
     background-image: url(../images/background.jpg);
-    background-blend-mode: overlay;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
-    background-repeat:repeat
 }
 header{
     font-size: 30px;
