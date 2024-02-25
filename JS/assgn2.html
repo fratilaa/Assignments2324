@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let firstNr = prompt("Introduceti primul numar");
+      let secondNr = prompt("Introduceti al doilea numar");
+      let operation = prompt("Introduceti operatia");
+      
+      let result;
+      
+      
+      function calculator(firstNr, secondNr) {
+        if ((operation = "+")) {
+          result = parseInt(firstNr) + parseInt(secondNr);
+        } else if ((operation = "-")) {
+          result = parseInt(firstNr) - parseInt(secondNr);
+        } else if ((operation = "*")) {
+          result = parseInt(firstNr) * parseInt(secondNr);
+        } else {
+          result = parseInt(firstNr) / parseInt(secondNr);
+        }
+        return result;
+      }
+      alert(`rezultatul dvs. este: ${result}`);
+
+      //   if (operation = "+") {
+      //     result =parseInt(firstNr + secondNr);
+      //   }
+      //   else if (operation = "-") {
+      //     result =parseInt(firstNr - secondNr);
+      //   }
+      //   else if (operation = "*") {
+      //     result = parseInt(firstNr * secondNr);
+      //   }
+      //   else if (operation = "/") {
+      //     result = parseInt(firstNr / secondNr);
+      //   }
+    </script>
+  </body>
+</html>
