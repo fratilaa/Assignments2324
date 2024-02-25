@@ -7,39 +7,34 @@
   </head>
   <body>
     <script>
-      let firstNr = prompt("Introduceti primul numar");
-      let secondNr = prompt("Introduceti al doilea numar");
-      let operation = prompt("Introduceti operatia");
-      
-      let result;
-      
-      
-      function calculator(firstNr, secondNr) {
-        if ((operation = "+")) {
-          result = parseInt(firstNr) + parseInt(secondNr);
-        } else if ((operation = "-")) {
-          result = parseInt(firstNr) - parseInt(secondNr);
-        } else if ((operation = "*")) {
-          result = parseInt(firstNr) * parseInt(secondNr);
-        } else {
-          result = parseInt(firstNr) / parseInt(secondNr);
-        }
-        return result;
-      }
-      alert(`rezultatul dvs. este: ${result}`);
+      let firstNr = prompt('Introduceti primul numar');
+      let secondNr = prompt('Introduceti al doilea numar');
+      let operation = prompt('Introduceti operatia');
 
-      //   if (operation = "+") {
-      //     result =parseInt(firstNr + secondNr);
-      //   }
-      //   else if (operation = "-") {
-      //     result =parseInt(firstNr - secondNr);
-      //   }
-      //   else if (operation = "*") {
-      //     result = parseInt(firstNr * secondNr);
-      //   }
-      //   else if (operation = "/") {
-      //     result = parseInt(firstNr / secondNr);
-      //   }
+      if (operation == '+') {
+        function sum(firstNr, secondNr) {
+          return parseInt(firstNr) + parseInt(secondNr);
+        }
+        alert(`Rezultatul dvs. este: ${sum(firstNr, secondNr)}`);
+      } else if (operation == '-') {
+        function diff(firstNr, secondNr) {
+          return parseInt(firstNr) - parseInt(secondNr);
+        }
+        alert(`rezultatul dvs. este: ${diff(firstNr, secondNr)}`);
+      } else if (operation == '*') {
+        function mltp(firstNr, secondNr) {
+          return parseInt(firstNr) * parseInt(secondNr);
+        }
+        alert(`rezultatul dvs. este: ${mltp(firstNr, secondNr)}`);
+      } else if (operation == '/') {
+        function divide(firstNr, secondNr) {
+          if (secondNr == 0) {
+            alert('Impartirea cu 0 nu poate fi facuta');
+          }
+          return parseInt(firstNr) / parseInt(secondNr);
+        }
+        alert(`rezultatul dvs. este: ${divide(firstNr, secondNr)}`);
+      }
     </script>
   </body>
 </html>
