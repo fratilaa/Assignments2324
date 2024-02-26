@@ -7,23 +7,38 @@
   </head>
   <body>
     <script>
-      let firstNr = prompt('Introduceti primul numar');
-      let secondNr = prompt('Introduceti al doilea numar');
-      let operation = prompt('Introduceti operatia');
+      let firstNr = parseInt(prompt("Introduceti primul numar"));
+      let operation = prompt("Introduceti operatia");
+      let secondNr = parseInt(prompt("Introduceti al doilea numar"));
       let result;
-      if (operation == "+") {
-           result =parseInt(firstNr + secondNr);
-        }
-         else if (operation == "-") {
-               result =parseInt(firstNr - secondNr);
-        }
-         else if (operation == "*") {
-               result = parseInt(firstNr * secondNr)
-        }
-         else if (operation == "/") {
-               result = parseInt(firstNr / secondNr);
-        }
-        alert(`rezultatul dvs. este: ${result}`);
+
+      switch (operation) {
+        case "+":
+          result = parseInt(firstNr + secondNr);
+          break;
+        case "-":
+          result = parseInt(firstNr - secondNr);
+          break;
+        case "*":
+          result = parseInt(firstNr * secondNr);
+          break;
+        case "/":
+          result = parseInt(firstNr / secondNr);
+          if (secondNr == 0){
+            alert("Impartirea la 0 nu poate fi efectuata")
+          }
+          break;
+        default:
+          alert("Introduceti un operator");
+          break;
+      }
+
+      if (result !== result) {
+        alert("Operatia nu a putut fi efectuata. Verificati datele introduse");
+      } else{
+        alert(`Rezultatul dvs este: ${result}`);
+      }
+
     </script>
   </body>
 </html>
