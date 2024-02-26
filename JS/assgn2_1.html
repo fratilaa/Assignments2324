@@ -14,16 +14,16 @@
 
       switch (operation) {
         case "+":
-          result = firstNr + secondNr;
+          result = parseInt(firstNr + secondNr);
           break;
         case "-":
-          result = firstNr - secondNr;
+          result = parseInt(firstNr - secondNr);
           break;
         case "*":
-          result = irstNr * secondNr;
+          result = parseInt(firstNr * secondNr);
           break;
         case "/":
-          result = firstNr / secondNr;
+          result = parseInt(firstNr / secondNr);
           if (secondNr == 0){
             alert("Impartirea la 0 nu poate fi efectuata")
           }
@@ -34,7 +34,7 @@
       }
 
       if (result !== result) {
-        alert("Operatia nu a putut fi efectuata. Verificati datele introduse");
+        alert("Operatia nu a putut fi efectuata. Introduceti doua numere");
       } else{
         alert(`Rezultatul dvs este: ${result}`);
       }
