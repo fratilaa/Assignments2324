@@ -23,18 +23,20 @@
           result = parseInt(firstNr * secondNr);
           break;
         case "/":
-          result = parseInt(firstNr / secondNr);
-          if (secondNr == 0){
-            alert("Impartirea la 0 nu poate fi efectuata")
-          }
+            result = parseInt(firstNr / secondNr);
+            if (secondNr !== 0){
+              result = parseInt(firstNr / secondNr);
+            } else{
+              result = 'Impartirea nu poate fi 0'
+            }
           break;
         default:
-          alert("Introduceti un operator");
+          alert("Introduceti operatorul");
           break;
       }
 
       if (result !== result) {
-        alert("Operatia nu a putut fi efectuata. Introduceti doua numere");
+        alert("Operatia nu a putut fi efectuata. Verificați datele introduse");
       } else{
         alert(`Rezultatul dvs este: ${result}`);
       }
