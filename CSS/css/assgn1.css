@@ -15,8 +15,8 @@ a[target = _blank]{
 }
 
 #first-div>p::after {
-    content: "NEW";
-    color: rgb(255, 255, 0);
+    content: "- NEW";
+    color: yellow;
 }
 
 :nth-child(8):hover{
