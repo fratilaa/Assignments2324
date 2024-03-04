@@ -22,8 +22,8 @@ body {
 
 .color-ring {
   position: absolute;
-  width: 320px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
   top: 50%;
@@ -34,8 +34,8 @@ body {
 
 .blur-ring {
   position: absolute;
-  width: 280px;
-  height: 280px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
   top: 50%;
@@ -47,8 +47,8 @@ body {
 
 .inside {
   position: absolute;
-  width: 280px;
-  height: 280px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background-color: #050210;
   top: 50%;
@@ -58,8 +58,8 @@ body {
 
 .pulsing-circle {
   position: absolute;
-  width: 280px;
-  height: 280px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background-color: #1f2937;
   top: 50%;
