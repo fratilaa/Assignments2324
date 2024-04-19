@@ -1,0 +1,23 @@
+nav{
+    background-color: #fff;
+}
+header a{
+    color: lightgray;
+    margin-left: 24px;
+}
+header a:hover{
+    color: #000;
+}
+
+/*HERO*/
+#hero-section{
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#green-box{
+    background-color: green;
+}
+ 
