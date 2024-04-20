@@ -1,8 +1,37 @@
-.error {
-    color: red;
-    display: none;
+input[type=text],
+input[type=password], 
+button{
+    width: 100%;
 }
 
-.success {
+form>div{
+    margin: 16px 0px 16px 0px;
+}
+
+form>div>label{
+    font-weight: bold;
+}
+
+form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-icon i.fa-check {
     color: green;
+}
+
+.input-icon i.fa-times {
+    color: red;
 }
