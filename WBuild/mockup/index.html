@@ -9,13 +9,11 @@
 </head>
 <body>
 
-    <!--MENU-->
-    <section id="nav" class="container-fluid">
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>My Website</h2>
-            </div>
-            <div class="col-lg-8 align-items-end">
+    <!--HEADER-->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+            <h1 class="logo display-6">My Website</h1>
+            <div class="nav">
                 <a href="#">Home</a>
                 <a href="#">Portofolio</a>
                 <a href="#">Staff</a>
@@ -25,16 +23,64 @@
                 <a href="#">Download</a>
             </div>
         </div>
-    </section>
+    </header>
 
 
     <!--HERO-->
-    <section class="container-fluid vh-100 align-items-center" id="hero-section">
-        <div class="row">
-            <div id="green-box" class="col-4 offset-1 align-items-center">
-                <p class="lead">We strive to make all of our creations exquisite.</p>
-
+    <section class="d-flex align-items-center" id="hero-section">
+        <div class="container row position-absolute top-50 start-0">
+            <div id="green-box" class="bg-success col-lg-5 col-md-12 offset-1">
+                <p class="lead text-center text-light fw-bold m-3">We strive to make all of our creations exquisite.</p>
             </div>
+        </div>
+    </section>
+
+    <!--SECTION-ICONS-->
+    <section id="services">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div id="rocket" class="col-md-12 col-lg-3 d-flex align-items-stretch m-auto">
+                    <div class="icon-box text-center">
+                        <div class="icon ">
+                            <img src="./img/icon-1.png" alt="rocket">
+                        </div>
+                        <h2 class="title text-center">Purpose</h2>
+                        <p class="description text-muted"> Vestibulum sapien nisi, suscipit vitae euismod vitae, imperdiet eget est.Etiam tincidunt tempus.</p>
+                    </div>
+                </div>
+
+                <div id="like" class="col-md-12 col-lg-3 d-flex align-items-stretch m-auto">
+                    <div class="icon-box text-center">
+                        <div class="icon ">
+                            <img src="./img/icon-2.png" alt="like">
+                        </div>
+                        <h2 class="title text-center">Quality</h2>
+                        <p class="description text-muted"> Nam commodo risus pharetra magna egestas, nec iaculis augue lobortis. Proin eleifend enim quis.</p>
+                    </div>
+                </div>
+
+                <div id="gears" class="col-md-12 col-lg-3 d-flex align-items-stretch m-auto">
+                    <div class="icon-box text-center">
+                        <div class="icon ">
+                            <img src="./img/icon-3.png" alt="gears">
+                        </div>
+                        <h2 class="title text-center">Function</h2>
+                        <p class="description text-muted">Aenean et tellus id nisi vehicula fringilla. In condimentum dui eu turpis mollis turpis suscipit</p>
+                    </div>
+                </div>
+
+                <div id="star" class="col-md-12 col-lg-3 d-flex align-items-stretch m-auto">
+                    <div class="icon-box text-center">
+                        <div class="icon">
+                            <img src="./img/icon-4.png" alt="star">
+                        </div>
+                        <h2 class="title text-center">Elegant</h2>
+                        <p class="description text-muted"> Mauris accumsan magna in placerat lacinia. Proin sit amet neque vitae nunc pulvinar varius.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
         </div>
 
     </section>
