@@ -30,8 +30,17 @@ header a:hover{
 #services{
     margin-bottom: 15vh;
 }
- /*FOOTER*/
- footer{
+
+#about{
+    background-color: #222222;
+}
+table{
+    background-color: #222222;
+}
+
+/*FOOTER*/
+footer{
     height: 5vw;
     background-color: rgb(17, 17, 17)
- }
+}
+
