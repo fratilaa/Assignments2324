@@ -15,27 +15,43 @@ header a:hover{
 
 /*HERO*/
 #hero-section{
-    height: 70vh;
+    height: 75vh;
     margin-bottom: 15vh;
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
 }
 
-/* #green-box{
-    position:inherit;
-} */
+#green-box{
+    margin-bottom: 280px;
+}
 
 #services{
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
 }
+
 
 #about{
     background-color: #222222;
 }
-table{
-    background-color: #222222;
+
+div>ul>div>li{
+    background-color: #222222 !important;
+}
+.list-group-item:first-child,
+.list-group-item+.list-group-item{
+    border-left: none !important;
+    border-right: none !important;
+    border-color: #6c757d;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    padding-left: 0 !important;
 }
 
 /*FOOTER*/

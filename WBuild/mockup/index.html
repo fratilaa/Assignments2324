@@ -11,7 +11,7 @@
 
     <!--HEADER-->
     <header id="header" class="d-flex align-items-center">
-        <div class="container d-flex align-items-center justify-content-between">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
             <h1 class="logo display-6">My Website</h1>
             <div class="nav">
                 <a href="#">Home</a>
@@ -28,16 +28,19 @@
 
     <!--HERO-->
     <section class="d-flex align-items-center" id="hero-section">
-        <div class="container row position-absolute top-50 start-0">
-            <div id="green-box" class="bg-success col-lg-5 col-md-12 offset-1">
-                <p class="lead text-center text-light fw-bold m-3">We strive to make all of our creations exquisite.</p>
+        <div class="container position-absolute">
+            <div class="row">
+                <div id="green-box" class="bg-success col-lg-6 col-md-12 offset-1">
+                    <h3 class="text-center text-light fw-bold my-4">We strive to make all of our creations exquisite.</h3>
+                </div>
             </div>
         </div>
+
     </section>
 
     <!--SECTION-ICONS-->
-    <section id="services">
-        <div class="container m-5">
+    <section id="services" class="position-relative">
+        <div class="container ps-5">
             <div class="row">
                 <div id="rocket" class="col-md-12 col-lg-3 d-flex align-items-stretch m-auto">
                     <div class="icon-box text-center">
@@ -84,53 +87,90 @@
     </section>
 
     <!--RECENT WORK-->
-    <section>
-        <div class="container m-5">
+    <section id="recent" class="position-relative">
+        <div class="container my-4 ps-5">
             <h4>RECENT WORK</h2>
             <hr>
-            <div class="row"> 
-                <div class="col-md-12 col-lg-3 m-auto">
-                    <div class="text-center mr-2"> 
-                        <img src="./img/bike-400x340.jpg" alt="bike">
+            <div class="row d-flex align-items-stretch"> 
+                <div class="col-md-6 col-lg-3 m-auto">
+                    <div class="mb-2"> 
+                        <img class="img-fluid" src="./img/bike-400x340.jpg" alt="bike">
                     </div>
-                    <h4 class="title">Green bike</h4>
+                    <h5 class="title fw-bold">Green bike</h5>
                     <p class="description text-muted">Beautiful, Travel</p>
                 </div>
         
-                <div class="col-md-12 col-lg-3 m-auto">
-                    <div class="text-center mr-2">
-                        <img  src="./img/surf-400x340.jpg" alt="beach">
+                <div class="col-md-6 col-lg-3 m-auto">
+                    <div class="mb-2">
+                        <img class="img-fluid" src="./img/surf-400x340.jpg" alt="beach">
                     </div>
-                    <h4 class="title">Salt Of The Earth</h4>
+                    <h5 class="title fw-bold">Salt Of The Earth</h5>
                     <p class="description text-muted">Beautiful, Travel</p>
                 </div>
 
-                <div class="col-md-12 col-lg-3 m-auto">
-                    <div class="text-center">
-                        <img src="./img/hills-400x340.jpg" alt="hills">
+                <div class="col-md-6 col-lg-3 m-auto">
+                    <div class="mb-2">
+                        <img class="img-fluid" src="./img/hills-400x340.jpg" alt="hills">
                     </div>
-                    <h4 class="title">Mountain High</h4>
+                    <h5 class="title fw-bold">Mountain High</h5>
                     <p class="description text-muted">Travel</p>
                 </div>
 
-                <div class="col-md-12 col-lg-3 m-auto">
-                    <div class="text-center">
-                        <img src="./img/path-400x340.jpg" alt="path">
+                <div class="col-md-6 col-lg-3 m-auto">
+                    <div class="mb-2">
+                        <img class="img-fluid" src="./img/path-400x340.jpg" alt="path">
                     </div>
-                    <h4 class="title">When A tree Falls</h4>
+                    <h5 class="title fw-bold">When A tree Falls</h5>
                     <p class="description text-muted">Beautiful</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!--BLOG-->
+    <section id="blog" class="position-relative">
+        <div class="container my-5 ps-5">
+            <h4>FROM THE BLOG</h2>
+            <hr>
+            <div class="row d-flex align-items-stretch mt-4"> 
+                <div class="col-md-12 col-lg-4 m-auto">
+                    <div class="mb-4"> 
+                        <img class="img-fluid" src="./img/cow-640x340.jpg" alt="bike">
+                    </div>
+                    <h5 class="title fw-bold">How Now</h5>
+                    <p>Posted on October 28, 2020</p>
+                    <p class="description text-muted">Proin et ligula laoreet, vestibulum orci nec, eleifend purus. Quisque ullamcorper sem at ipsum elementum laoreet. Integer gestas...</p>
+                </div>
+        
+                <div class="col-md-12 col-lg-4 m-auto">
+                    <div class="mb-4">
+                        <img class="img-fluid" src="./img/sunrise-640x340.jpg" alt="beach">
+                    </div>
+                    <h5 class="title fw-bold">Adrift by Simon Christen</h5>
+                    <p>Posted on September 29, 2020</p>
+                    <p class="description text-muted">Morbi vulputate egestas sem, eu cursus ligula ullamcorper non. Curabitur tristique velit eu mauris venenatis egestas. Phasellus bibendum...</p>
+                </div>
+
+                <div class="col-md-12 col-lg-4 m-auto">
+                    <div class="mb-4">
+                        <img class="img-fluid" src="./img/grass-640x340.jpg" alt="hills">
+                    </div>
+                    <h5 class="title fw-bold">A Walk In The Park</h5>
+                    <p>Posted on August 10, 2020</p>
+                    <p class="description text-muted">Proin elementum pharetra mauris sed semper. Cras lorem arcu, culputate ut malesuada ut, tincidunt tempor lectus. Etiam adipisicing...</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!--SECTION-ABOUT-->
-    <section id="about">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-md-12">
-                    <div class="about-title text-light">
-                        <h1>My Website</h1>
+    <section id="about" class="position-relative">
+        <div class="container ps-5">
+            <div class="row d-flex align-items-stretch">
+                <div class="col-lg-4 col-md-12 my-5">
+                    <div class="about-title text-light mb-4">
+                        <h5>My Website</h5>
                     </div>
                     <div class="about-content text-white-50">
                         <span>
@@ -139,36 +179,57 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-12">
-                    <div class="about-title text-light">
-                        <h1>Recent Posts</h1>
+                <div class="col-lg-4 col-md-12 my-5">
+                    <div class="about-title text-light mb-4">
+                        <h5>Recent Posts</h5>
                     </div>
-                    <div class="about-content text-white-50">
-                        <span>
-                            <table class="table text-capitalize">
-                                <tr><td>how now</td></tr>
-                                <tr><td>adrift by simon christen</td></tr>
-                                <tr><td>a walk in the park</td></tr>
-                                <tr><td>time to think</td></tr>
-                                <tr><td>field of dreams</td></tr>
-                            </table>
-                        </span>
+                    <div class="about-content text-secondary">
+                        <ul class="list-group text-capitalize">
+                            <div>
+                                <li class="list-group-item">
+                                    <a href="#" class="text-white-50">how now</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" class="text-white-50">adrift by simon christen</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" class="text-white-50">a walk in the park</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" class="text-white-50">time to think</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" class="text-white-50">field of dreams</a>
+                                </li>
+                            </div>
+                        </ul>
                     </div>
+                </div>
 
-                <div class="col-lg-4 col-md-12">
-                    <div class="about-title text-light">
-                        <h1>Recent Works</h1>
+                <div class="col-lg-4 col-md-12 my-5">
+                    <div class="about-title text-light mb-4">
+                        <h5>Recent Works</h5>
                     </div>
-                    <div class="about-content text-white-50">
-                        <span>
-                            <table class="table table-sm text-capitalize">
-                                <tr><td>beautiful</td></tr>
-                                <tr><td>travel</td></tr>
-                                <tr><td>surreal</td></tr>
-                                <tr><td>thoughts</td></tr>
-                                <tr><td>unique</td></tr>
-                            </table>
-                        </span>
+                    <div class="about-content">
+                        <ul class="list-group text-capitalize">
+                            <div>
+                                <li class="list-group-item">
+                                    <a href="#" class="text-white-50">beautiful</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" class="text-white-50">travel</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" class="text-white-50">surreal</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" class="text-white-50">thoughts</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" class="text-white-50">unique</a>
+                                </li>
+                            </div>
+                        <ul>
                     </div>
                 </div>
             </div>
