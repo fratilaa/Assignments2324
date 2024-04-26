@@ -14,8 +14,12 @@ header a:hover{
 }
 
 /*HERO*/
-#hero-section{
+#wrapper{
     height: 75vh;
+}
+#hero-section{
+    min-width: 100%;
+    height: auto;
     margin-bottom: 15vh;
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
@@ -23,8 +27,21 @@ header a:hover{
     background-position: center;
 }
 
-#green-box{
-    margin-bottom: 280px;
+
+/* #green-box{
+    margin-bottom: 280px; 
+    
+}*/
+@media (min-width: 576px) {
+    #green-box{
+       height: 20px;
+       margin-bottom: 5px;
+    }
+}
+@media (min-width:756px) {
+    #green-box{
+        height: 60px;
+    }
 }
 
 #services{
