@@ -2,10 +2,9 @@
 header{
     height: 15vh;
 }
-
 nav{
-    width: 100vw;
     background-color: #fff;
+    /* width: 100vw; */
 }
 header>ul>li>a{
     color: lightgray;
@@ -47,7 +46,7 @@ header h6{
     background-position: center;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-width:755px) {
     #green-box{
        height: 10vh;
        width: 90vw;
@@ -61,19 +60,20 @@ header h6{
     }
     
 }
-@media (min-width:756px) {
+@media (min-width:756px) and (max-width: 991px) {
     #green-box{
         height: 7vh;
-        width: 60vw;
+        width: 70vw;
         margin-top: 60px;
-        margin-left: 15vw;
+        margin-right: 10vw;
     }
     #box-content{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     #hero-section{
         height: 50vh;
     }
+
 }
 @media (min-width: 992px){
     #green-box{
