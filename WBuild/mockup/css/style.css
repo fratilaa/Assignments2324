@@ -42,9 +42,6 @@ header a:hover{
         height: 30vh;
     }
     
-    footer{
-        height: 25vh;
-    }
 }
 @media (min-width:756px) {
     #green-box{
