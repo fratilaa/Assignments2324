@@ -10,30 +10,51 @@
 <body>
 
     <!--HEADER-->
-    <header id="header" class="d-flex align-items-center">
-        <div class="container-fluid d-flex align-items-center justify-content-between">
-            <h1 class="logo display-6">My Website</h1>
-            <div class="nav">
-                <a href="#">Home</a>
-                <a href="#">Portofolio</a>
-                <a href="#">Staff</a>
-                <a href="#">Features</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
-                <a href="#">Download</a>
+    <header id="header" class="container-fluid mb-3">
+        <nav class="navbar navbar-expand-lg navbar-collapse-md navbar-light bg-light">
+            <h1 class="logo display-1 display-md-2" href="#">My Website</h1>
+            <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <div>
+                    <img src="./img/menu.png" alt="menu">
+                    <h6>Menu</h6> 
+                </div>
+                    
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Download</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
     </header>
 
 
     <!--HERO-->
     <section  id="hero-section" class="position-relative">
-        <div id="wrapper" class="container-fluid d-flex align-items-center justify-content-lg-start justify-content-sm-center">
+        <div id="wrapper" class="container-fluid d-flex align-items-center justify-content-md-start justify-content-sm-center">
             <div class="row">
-                <div id="green-box" class="bg-success col-md-12">
-                    <div >
-                        <h3 class="text-center text-light fw-bold">We strive to make all of our creations exquisite.</h3>
-                    </div>
+                <div id="green-box" class="bg-success col-lg-6 col-md-12">
+                    <h4 id="box-content" class="text-center text-light fw-bold mt-3">We strive to make all of our creations exquisite.</h4>
                 </div>
             </div>
         </div>

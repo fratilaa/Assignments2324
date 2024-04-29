@@ -1,3 +1,4 @@
+/*HEADER*/
 header{
     height: 15vh;
 }
@@ -5,7 +6,7 @@ header{
 nav{
     background-color: #fff;
 }
-header a{
+header>ul>li>a{
     color: lightgray;
     margin-left: 24px;
 }
@@ -13,13 +14,14 @@ header a:hover{
     color: #000;
 }
 
+
 /*HERO*/
 #wrapper{
-    height: 75vh;
-}
-#hero-section{
     min-width: 100%;
     height: auto;
+}
+
+#hero-section{
     margin-bottom: 15vh;
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
@@ -27,28 +29,59 @@ header a:hover{
     background-position: center;
 }
 
-
-/* #green-box{
-    margin-bottom: 280px; 
-    
-}*/
 @media (min-width: 576px) {
     #green-box{
-       height: 20px;
-       margin-bottom: 5px;
+       height: 10vh;
+       width: 90vw;
+       margin-top: 70px;
+    }
+    #box-content{
+        font-size: 1.75rem;
+    }
+    #hero-section{
+        height: 30vh;
+    }
+    
+    footer{
+        height: 25vh;
     }
 }
 @media (min-width:756px) {
     #green-box{
-        height: 60px;
+        height: 7vh;
+        width: 60vw;
+        margin-top: 60px;
+        margin-left: 15vw;
+    }
+    #box-content{
+        font-size: 1.5rem;
+    }
+    #hero-section{
+        height: 50vh;
     }
 }
+@media (min-width: 992px){
+    #green-box{
+        height: 8vh;
+        width: 45vw;
+        margin-top: 7vw;
+        margin-left: 5vw;
+    }
+    #box-content{
+        font-size: 1.75rem;
+    }
+    #hero-section{
+        height: 75vh;
+    }
+    
+}
 
+/*SERVICES-ICONS*/
 #services{
     margin-bottom: 10vh;
 }
 
-
+/*ABOUT*/
 #about{
     background-color: #222222;
 }
@@ -71,9 +104,9 @@ li{
     padding-left: 0 !important;
 }
 
+
 /*FOOTER*/
 footer{
-    height: 5vw;
+    height: 10vh;
     background-color: rgb(17, 17, 17)
 }
-
