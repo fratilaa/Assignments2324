@@ -10,8 +10,24 @@ header>ul>li>a{
     color: lightgray;
     margin-left: 24px;
 }
+header li{
+    padding: 35px;
+}
 header a:hover{
     color: #000;
+}
+header img{
+    margin-top: 22px;
+    width: 30px;
+}
+header h6{
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 2rem;
+}
+
+.btn{
+    border: 0px;
 }
 
 
